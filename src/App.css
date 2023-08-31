@@ -1,0 +1,333 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  body{
+  background-color: #2e3f77;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  }
+.container{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.post{
+  flex: 5;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  margin-top: 15px;
+  background-color: #f1f2f3;
+}
+.upperPost{
+display: flex;
+flex-direction: row;
+padding-top: 5px;
+}
+.postData{
+  flex: 8;
+}
+.upperPost span{
+  flex: 2;
+    border-radius:50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.username{
+  color: #737A7A;
+  padding-top: 2px;
+}
+.title{
+  font-weight: bold;
+  color: #15131B;
+}
+.postText{
+  overflow : hidden ;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 10px;
+  font-size: 1.2rem;
+}
+.underTextPost{
+  color: #737A7A;
+  padding-top: 2px;
+  padding-left: 15px;
+  display: flex;
+}
+.underTextPost .leftSection{
+  flex: 8.5;
+}
+.underTextPost .rightSection{
+  flex: 1.5;
+}
+.underTextPost .rightSection .likeButtonWhite{
+  font-size: 1.2rem;
+}
+.underTextPost .rightSection .likeButtonWhite:hover{
+  scale: 1.1;
+}
+.underTextPost .rightSection .likeButtonBlue{
+  font-size: 1.2rem;
+  color: #2e3f77;
+}
+.underTextPost .rightSection .likeButtonBlue:hover{
+  scale: 1.1;
+}
+.underTextPost .rightSection .iconDiv{
+  display: flex;
+}
+/* Styling for the form container */
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin:  auto;
+  margin-top: 70px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Styling for form labels */
+.form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styling for input fields */
+.form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.form button:hover {
+  background-color: #0056b3;
+}
+#inputPost{
+  height: 100px; /* Adjust the height as needed */
+  padding: 10px;
+  line-height: 1.2; 
+  overflow: auto;
+}
+#inputPost::placeholder {
+  font-size: large;
+  
+}
+span{
+  width: 100%;
+  text-decoration: none;
+}
+.linkDiv{
+  width: 100%;
+  height: 8vh;
+  background-color: #f1f2f3;
+  display: flex;
+  align-items: center;
+}
+.Link{
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #2e3f77;
+}
+.Link:hover{
+  color: #737A7A;
+}
+.pagePost .postContainer{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.pagePost .postOnPostPage{
+  flex: 6;
+  width: 400px;
+  height: 70vh;
+  margin-bottom: 10px;
+}
+.pagePost .commentSection{
+  flex: 4;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #f6f8f9;
+  border: 1px solid #b2c1d1;
+}
+.pagePost .comment{
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  margin: 5px;
+}
+.pagePost .comment .dateOfComment{
+  color: #b2c1d1;
+}
+.pagePost .comments p{
+  color: #9cb0c4;
+}
+.pagePost .addComment #inputComment{
+border: none;
+background-color: transparent; 
+font-size:15px;
+outline: none;
+}
+.pagePost .addComment .commentForm{
+height: 20px;
+border: 1px solid black;
+height: 30px;
+border: 1px solid #b2c1d1;
+border-radius: 8px;
+
+display: flex;
+flex-direction: row;
+}
+.pagePost .addComment .commentForm #inputComment{
+  flex: 8;
+}
+.pagePost .addComment .commentForm button{
+  flex: 2;
+  border: none;
+  height: 100%;
+  background-color: #007bff;
+  color: #ffffff; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.pagePost .addComment .commentForm button:hover{
+  background-color: #0056b3; 
+}
+.commentSection .username{
+  color: #9cb0c4; 
+}
+/* .pagePost .commentSection .comments button{
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+  font-size: 12px;
+}
+.pagePost .commentSection .comments button:hover{
+  scale:0.9;
+} */
+.menuImage{
+  border-radius:50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 35px;
+  width: 35px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 45px;
+  margin-top: 10px;
+}
+.menuUsername{
+color: #2e3f77;
+padding-left: 10px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f2f3;
+  width: 100%;
+}
+.introductionProfile{
+  flex: 1;
+}
+.leftSection{
+  flex:9;
+}
+.seePostButton{
+  background-color: #2e3f77;
+  border: 1px solid #2e3f77;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.15;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+}
+.seePostButton:hover {
+  opacity: 0.8;
+  scale: 0.98;
+}
+.deleteButton{
+  align-items: center;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  margin: 10px;
+}
+.deleteButton:hover{
+  scale: 0.99;
+  opacity: 0.8;
+}
+.comments .deleteButton{
+  margin:0;
+  font-size: 0.8rem;
+  padding: 1px 5px;
+  line-height: 20px;
+}
+/* Media query for viewport width less than 600px */
+/* Media query for phone users */
+@media screen and (max-width: 480px) {
+  body{
+    font-size: 0.8rem;
+  }
+  .post{
+    flex: 5;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background-color: #f1f2f3;
+  }
+}
